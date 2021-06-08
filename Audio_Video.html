@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vkonex Recorder</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body style="background:white">
+  <h1 style="color:green" align="center">Video and audio recorder</h1>
+    <div id="container" class="center">
+      <video id="gum" playsinline autoplay muted></video>
+      <video id="recorded" playsinline loop></video>
+
+      <div>
+        <button id="start" style="border-radius:5%" style="color:#FFFFFF">Start camera</button>
+        <button id="record" disabled style="border-radius:5%" style="color:#FFFFFF">Record</button>
+        <button id="play" disabled style="border-radius:5%" style="color:#FFFFFF">Play</button>
+        <button id="download" disabled style="border-radius:5%" style="color:#FFFFFF">Download</button>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reduce Noise &nbsp;<input type="checkbox" id="echoCancellation" />
+      </div>
+
+       
+
+      <div>
+        <span id="errorMsg"></span>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,52 @@
+@charset "utf-8";
+button {
+  margin: 0 3px 10px 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 99px;
+  
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  height:auto;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+button:last-of-type {
+  margin: 0;
+}
+
+p.borderBelow {
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+}
+
+video {
+
+ margin: auto;
+  width: 30%;
+  height:auto;
+  border: 3px;
+  padding: 10px;
+}
+
+video:last-of-type {
+  margin: auto;
+  width: 30%;
+  height:auto;
+  border: 3px;
+  padding: 10px;
+}
+
+video#gumVideo {
+  margin: auto;
+  width: 30%;
+  height:auto;
+  border: 3px;
+  padding: 10px;
+}
+/* CSS Document */
+
