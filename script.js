@@ -18,6 +18,19 @@ recordButton.addEventListener('click', () => {
     startRecording();
   } else {
     stopRecording();
+  const blob = new Blob(recordedBlobs, {type: 'video/mp4'});
+  const url = window.URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.style.display = 'none';
+  a.href = url;
+  a.download = 'test.mp4';
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(() => {
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+  }, 100);
+ 
     recordButton.textContent = 'Record';
     playButton.disabled = false;
     downloadButton.disabled = false;
